@@ -159,16 +159,19 @@ body {
     overflow: hidden;
 }
 
+
 .hero-grid {
     display: grid;
-    grid-template-columns: 1.3fr 1fr;
+    grid-template-columns: 1.3fr 1fr; 
+    padding-left: 2vw;
     gap: 4rem;
     align-items: center;
     max-width: 1200px;
-    padding-left: 60px;  
+    padding-top: 10%;
     margin: 0 auto;
     z-index: 2;
     position: relative;
+    overflow: hidden;
 }
 
 .greeting {
@@ -292,9 +295,10 @@ body {
 
 .profile-card {
     position: relative;
-    width: 350px;
+    width: 350px;    
     height: 350px;
     background: white;
+    background: transparent;
     border-radius: 30px;
     display: flex;
     align-items: center;
@@ -310,8 +314,7 @@ body {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    opacity: 0.8;
-    padding-top: 35px;
+    padding-top: 65px;
     
 }
 .profile-image img{
@@ -666,12 +669,13 @@ section {
 .skills-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 3rem;
+    gap: 0.5rem;
     max-width: 900px;
     margin: 0 auto;
 }
 
 .skill-card {
+    padding-left: 0%;
     text-align: center;
     transition: var(--transition);
 }
@@ -693,11 +697,12 @@ section {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
+
     z-index: 2;
 }
 
 .skill-icon {
-    font-size: 2.5rem;
+    font-size: 2rem;
     background: var(--gradient-primary);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
